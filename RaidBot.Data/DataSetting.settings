@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RaidBot.Data" GeneratedClassName="DataSetting">
+  <Profiles />
+  <Settings>
+    <Setting Name="D2IFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Zakaria\AppData\Local\Ankama\Dofus2\app\data\i18n\i18n_fr.D2I</Value>
+    </Setting>
+    <Setting Name="D2PFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data\Maps</Value>
+    </Setting>
+    <Setting Name="D2OFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data\Game</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

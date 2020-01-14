@@ -1,0 +1,9 @@
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\bin\Debug\RaidBot.Protocol.dll
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\bin\Debug\RaidBot.Protocol.pdb
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\bin\Debug\RaidBot.Common.dll
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\bin\Debug\RaidBot.Common.pdb
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\bin\Debug\RaidBot.Common.dll.config
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\obj\Debug\RaidBot.Protocol.csprojAssemblyReference.cache
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\obj\Debug\RaidBot.Protocol.csproj.CopyComplete
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\obj\Debug\RaidBot.Protocol.dll
+C:\Users\m6var\Documents\Projects\raidbot-master\RaidBot.Protocol\obj\Debug\RaidBot.Protocol.pdb

@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="RaidBot\RaidBot.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Zakaria\Mes projets\Others\RaidBot-master\RaidBot.Engine\Dispatcher\MessagesHandler.cs">
+    <Files>
+      <File FileName="RaidBot.Engine\Model\Game\World\Fight\IA\Brain.cs" Line="1" Column="1" />
+      <File FileName="RaidBot.Engine\Frames\Game\World\Fight\FightingFrame.cs" Line="123" Column="1" />
+      <File FileName="c:\Users\Zakaria\Mes projets\Others\RaidBot-master\RaidBot.Engine\Model\Game\World\Fight\IA\CastingSpells.cs" Line="57" Column="15" />
+      <File FileName="c:\Users\Zakaria\Mes projets\Others\RaidBot-master\RaidBot.Engine\Model\Game\World\Fight\RaidFight.cs" Line="241" Column="1" />
+      <File FileName="c:\Users\Zakaria\Mes projets\Others\RaidBot-master\RaidBot.Engine\Dispatcher\MessagesHandler.cs" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="c:\Users\Zakaria\Mes projets\Others\RaidBot-master\RaidBot.Engine\Model\Game\World\Fight\IA\CastingSpells.cs" line="51" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

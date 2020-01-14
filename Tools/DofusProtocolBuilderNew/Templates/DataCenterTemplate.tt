@@ -1,0 +1,37 @@
+﻿<#@ template language="C#" debug="true"  #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="DofusProtocolBuilder.Parsing" #>
+<#@ parameter name="Parser" type="DofusProtocolBuilder.Parsing.Parser" #>
+<#@ parameter name="Profile" type="DofusProtocolBuilder.Profiles.ParsingProfile" #>
+<#@ include file="./Helper.tt"#>
+// Generated on <#= DateTime.Now #>
+using System.Collections.Generic;
+using RaidBot.Common.IO;
+using System;
+
+namespace RaidBot.Protocol.DataCenter
+{
+<# PushIndent("    "); #>
+[Serializable()]
+public class <#=Parser.Class.Name #><#=( Parser.Class.Heritage != "Object" ? " : " + Parser.Class.Heritage : " : IData" ) #>
+{
+<# PushIndent("    "); #>
+       public <#=Parser.Class.Name #>()
+        {
+        }
+<#
+foreach (var field in Parser.Fields)
+{
+	if (field.Modifiers != AccessModifiers.Public && field.Name != "MODULE")
+		continue;
+
+    WriteField(field);
+} 
+#>
+<# PopIndent(); #>
+}
+<# PopIndent(); #>
+}

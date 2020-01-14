@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RaidBot.Engine.Setting" GeneratedClassName="RemoteSetting">
+  <Profiles />
+  <Settings>
+    <Setting Name="LoginListenPort" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">5555</Value>
+    </Setting>
+    <Setting Name="GameListenPort" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">443</Value>
+    </Setting>
+    <Setting Name="GameListenAdress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="LoginConnectionAdresse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">34.252.21.81</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

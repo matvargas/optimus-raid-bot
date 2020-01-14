@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DofusProtocolBuilder</name>
+    </assembly>
+    <members>
+        <member name="T:DofusProtocolBuilder.Parsing.Elements.AssignationStatement">
+            <summary>
+            </summary>
+            <remarks>
+              Only work if the value is a variable or a hard coded value
+            </remarks>
+        </member>
+        <member name="M:DofusProtocolBuilder.Profiles.ParsingProfile.GetRelativePath(System.String)">
+            <summary>
+            Get the path relative to the source directory
+            </summary>
+        </member>
+    </members>
+</doc>

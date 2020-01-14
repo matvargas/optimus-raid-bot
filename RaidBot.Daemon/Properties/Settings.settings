@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RaidBot.Daemon.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DofusPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\acorbeau\AppData\Local\Ankama\Dofus\app\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

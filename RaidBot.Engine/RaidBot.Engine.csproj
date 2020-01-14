@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{424C9731-030E-4D09-A4DA-117C496BCF18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaidBot.Engine</RootNamespace>
+    <AssemblyName>RaidBot.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MoonSharp.Interpreter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=921e73ce94aa17f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoonSharp.2.0.0.0\lib\net40-client\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
+    <Reference Include="starksoft.aspen, Version=1.1.5.0, Culture=neutral, PublicKeyToken=56b8923a24d03eb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\starksoft.aspen.1.1.6\lib\net45\starksoft.aspen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bot\BotConfig.cs" />
+    <Compile Include="Bot\Brain.cs" />
+    <Compile Include="Bot\Data\BotStats.cs" />
+    <Compile Include="Bot\Data\Context\ElementDetails.cs" />
+    <Compile Include="Bot\Data\Context\GroupMonsterDetails.cs" />
+    <Compile Include="Bot\Data\Context\NpcDetails.cs" />
+    <Compile Include="Bot\Data\GameServerDetail.cs" />
+    <Compile Include="Bot\Data\ObservableProperty.cs" />
+    <Compile Include="Bot\Data\Player.cs" />
+    <Compile Include="Bot\Data\Store.cs" />
+    <Compile Include="Bot\Data\UserConfig.cs" />
+    <Compile Include="Bot\Extension\Context\ExtensionContext.cs" />
+    <Compile Include="Bot\Extension\Context\FightExtensionContext.cs" />
+    <Compile Include="Bot\Extension\Context\RolePlayExtensionContext.cs" />
+    <Compile Include="Bot\Extension\Context\SharedExtensionsContext.cs" />
+    <Compile Include="Bot\Extension\ExtensionDomain.cs" />
+    <Compile Include="Bot\Frames\AuthFrame.cs" />
+    <Compile Include="Bot\Frames\CharacterSelectionFrame.cs" />
+    <Compile Include="Bot\Frames\GameContext\ContextFrame.cs" />
+    <Compile Include="Bot\Frames\GameContext\DialogFrame.cs" />
+    <Compile Include="Bot\Frames\FightContext\FightFrame.cs" />
+    <Compile Include="Bot\Frames\GameContext\InventoryFrame.cs" />
+    <Compile Include="Bot\Frames\PartyFrame.cs" />
+    <Compile Include="Bot\Managers\ActivityManager.cs" />
+    <Compile Include="Bot\Managers\Extension\Extensions\Extension.cs" />
+    <Compile Include="Bot\Managers\Extension\Extensions\GatherExtension.cs" />
+    <Compile Include="Bot\Managers\Extension\Extensions\HealerExtension.cs" />
+    <Compile Include="Bot\Managers\Extension\Extensions\InventoryExtension.cs" />
+    <Compile Include="Bot\Managers\GameContext\DialogManager.cs" />
+    <Compile Include="Bot\Managers\FightContext\Ia.cs" />
+    <Compile Include="Bot\Frames\GameContext\LatencyFrame.cs" />
+    <Compile Include="Bot\Frames\GameContext\MovementFrame.cs" />
+    <Compile Include="Bot\Frames\GameLoadingFrame.cs" />
+    <Compile Include="Bot\Frames\Frame.cs" />
+    <Compile Include="Bot\Managers\AuthManager.cs" />
+    <Compile Include="Bot\Managers\DellayManager.cs" />
+    <Compile Include="Bot\Managers\GameContext\ElementsManager.cs" />
+    <Compile Include="Bot\Managers\FightContext\FightManager.cs" />
+    <Compile Include="Bot\Managers\GameContext\PlayerManager.cs" />
+    <Compile Include="Bot\Managers\GameContext\MovementManager.cs" />
+    <Compile Include="Bot\Managers\GameContext\InventoryManager.cs" />
+    <Compile Include="Bot\Managers\Manager.cs" />
+    <Compile Include="Bot\Managers\PartyManager.cs" />
+    <Compile Include="Bot\Managers\ServerSelectionManager.cs" />
+    <Compile Include="Bot\Routines\Fighter.cs" />
+    <Compile Include="Bot\Routines\Routine.cs" />
+    <Compile Include="Daemon\Daemon.cs" />
+    <Compile Include="Daemon\DaemonClient.cs" />
+    <Compile Include="Dispatcher\Dispatcher.cs" />
+    <Compile Include="Dispatcher\IMessagesHandler.cs" />
+    <Compile Include="Dispatcher\MessageDelegateDefinition.cs" />
+    <Compile Include="Dispatcher\MessageHandlerAttribut.cs" />
+    <Compile Include="Dispatcher\MessageInitializedEventArgs.cs" />
+    <Compile Include="Dispatcher\MessagesHandler.cs" />
+    <Compile Include="Bot\Group.cs" />
+    <Compile Include="Bot\Managers\Extension\EtensionManager.cs" />
+    <Compile Include="MigrateRequestEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting\RemoteSetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>RemoteSetting.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\TrajetSetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TrajetSetting.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\LineOfSight.cs" />
+    <Compile Include="Utility\MapCoordinates.cs" />
+    <Compile Include="Utility\Pathfinding\Cell.cs" />
+    <Compile Include="Utility\Pathfinding\CellList.cs" />
+    <Compile Include="Utility\Pathfinding\CellMatrix.cs" />
+    <Compile Include="Utility\Pathfinding\CellWithOrientation.cs" />
+    <Compile Include="Utility\Pathfinding\Pathfinder.cs" />
+    <Compile Include="Utility\Pathfinding\PathingUtils.cs" />
+    <Compile Include="Utility\Security\Cryptography.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Setting\RemoteSetting.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>RemoteSetting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Setting\TrajetSetting.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>TrajetSetting.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utility\SpellShape.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RaidBot.Data\RaidBot.Data.csproj">
+      <Project>{65EE1577-D1D7-4011-BF2B-F589FDD4C528}</Project>
+      <Name>RaidBot.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RaidBot.Protocol\RaidBot.Protocol.csproj">
+      <Project>{601CBDE9-7169-41C3-B408-525D8BB0A2DE}</Project>
+      <Name>RaidBot.Protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RaidBot.Common\RaidBot.Common.csproj">
+      <Project>{1EF1A56A-46E9-4EDA-8461-872FCFA50385}</Project>
+      <Name>RaidBot.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RaidBot.Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionAdress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">213.248.126.39</Value>
+    </Setting>
+    <Setting Name="ConnectionPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5555</Value>
+    </Setting>
+    <Setting Name="ListeningPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5555</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
